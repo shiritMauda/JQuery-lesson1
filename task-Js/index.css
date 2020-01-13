@@ -1,0 +1,34 @@
+h1{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+form{
+background-color: whitesmoke;
+font-family: cursive;
+width: 40%;
+margin: auto;
+padding: 30px;
+border-radius: 20px;
+}
+
+input{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+label{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div{
+    padding: 10px
+}
+button{
+    text-align: center;
+}
+body{
+    background-image: url("back.jpg");
+}

@@ -1,0 +1,36 @@
+body,
+.wrapper {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+
+  height: 90vh;
+}
+.wrapper {
+  background-color:white;
+}
+h1 {
+  color: rgb(42, 119, 42);
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bolder;
+}
+input {
+  
+  background-color: rgb(252, 247, 247);
+}
+input:hover {
+    background-color: gray;
+    transition: background-color 0.9s ease-in-out;
+    margin: 15px;
+}
+button {
+    
+    background-color:white;
+}
+.result {
+  margin: auto;
+  padding: 30px;
+  color: rgb(42, 119, 42);
+  width: 30vw;
+  border: dashed 3px rgb(42, 119, 42);
+}

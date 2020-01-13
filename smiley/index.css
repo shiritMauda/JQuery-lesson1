@@ -1,0 +1,50 @@
+h1{
+    color:violet;
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+.wrapper{
+    outline: 1px green solid;
+    height: 60vh;
+    display: grid;
+    place-content: center;
+}
+.smiley{
+    height: 200px;
+    width: 200px;
+    background-color: yellow;
+    border-radius: 50%;
+
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.top{
+    outline: 2px green solid;
+    display: grid;
+grid-template-columns: auto auto;
+place-content: center;
+grid-column-gap: 40px;
+
+}
+.eye{
+    margin-top: 10px;
+    height: 20px;
+    width: 20px;
+    background-color: black;
+    border-radius: 50%;
+}
+.buttom{
+    display: grid;
+    place-content: center;
+}
+.mouth{
+    outline: 2px green solid;
+    height: 20px;
+    width: 180px;
+}

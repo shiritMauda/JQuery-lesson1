@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Volunteeraion</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>לוח התנדבויות</h1>
+    <form id="form">
+        <div>
+            <label for="nameV">שם התנדבות</label>
+            <input type="text" id ="nameV" name="nameV" minlength="3" required>
+        </div>
+        <div>
+            <label for="description">תיאור</label>
+            <input type="text" id="description" name="description" minlength="20" required>
+        </div>
+        <div>
+            <label for="population">אוכלוסיה</label>
+            <select name="population" id="population" required> 
+                <option value="0">בחר אוכלוסיה</option>
+                <option value="1">ילדים</option>
+                <option value="2">נוער</option>
+                <option value="3">מבוגרים</option>
+                <option value="4">חיות</option>
+            </select>
+        </div>
+        <div>
+            <label for="day">יום בשבוע</label>
+            <select name="day" id="day" required>
+                <option value="0">בחר יום</option>
+                <option value="1">ראשון</option>
+                <option value="2">שני</option>
+                <option value="3">שלישי</option>
+                <option value="4">רביעי</option>
+                <option value="5">חמישי</option>
+            </select>
+        </div>
+        <div>
+            <label for="timeV">שעה</label>
+            <input type="time" id="timeV" name="timeV" required>  
+        </div>
+        <div>
+            <label >כתובת</label>
+            <div>
+                <label for="city">עיר</label>
+            <input type="text" id="city" name="city" required>
+            </div>
+            <div>
+                <label for="street">רחוב</label>
+            <input type="text" id="street" name="street" required>
+            </div>
+            <div>
+                <label for="numberHouse">מספר בית</label>
+            <input type="number" id="numberHouse" name="numberHouse" required>
+            </div>
+            <div>
+                <label for="contact">איש קשר</label>
+            <input type="text" id="contact" name="contact" placeholder="הכנס מייל" required>
+            </div>
+        </div>
+        <button id="addVoulnterr">הוספה</button>
+    </form>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
