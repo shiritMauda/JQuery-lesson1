@@ -1,0 +1,17 @@
+
+  
+.f{
+color :lightgreen;
+font-weight: bold;
+font-family:'Courier New', Courier, monospace ;
+}
+
+h1:hover{
+    color: brown;
+    transition: all .4s ease-in-out;
+}
+img{
+    height: 40px;
+    width: auto;
+}
+

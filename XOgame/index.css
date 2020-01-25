@@ -23,8 +23,12 @@ body{
 
 .table{
 
-    margin: auto;
+    
     display: grid;
     grid-template-columns: repeat(3,100px);
-
+    margin: auto;
+}
+.wrapper{
+    display: grid;
+    place-content: center;
 }
