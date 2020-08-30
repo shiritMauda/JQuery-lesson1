@@ -1,0 +1,11 @@
+
+$test: solid 1px red;
+:host{
+    display: grid;
+    grid-template-rows: 10vh 90vh;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    outline: $test;
+}

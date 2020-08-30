@@ -1,0 +1,64 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    font-family: Heebo;
+    margin: 0;
+    padding: 0;
+    background: url("/assets/image/blackbirds2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.wrapperForm{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    background: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid rgba(0,0,0,.1);
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    margin: auto;
+    text-align: right;
+   }
+   .wrapperForm h2
+   {
+      margin: 0 0 40px;
+      padding: 0;
+      text-align: center;
+      color:#e2c108;
+   
+   }
+
+    
+
+   .wrapperForm button{
+      border-bottom: none;
+      cursor: pointer;
+      background: #e2c108;
+      color: #fff;
+      margin-bottom: 0;
+   }
+   
+   .wrapperForm app-input{
+   position: relative;
+   
+   }
+   .actionForm{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+   padding: 20px;
+    grid-template-rows: 1;
+    margin: auto;
+    place-content: center;
+    text-align: center;
+ }
+ 
+.buttonForm{
+    width: 70px;
+    border-radius: 10px;
+ }
+ .buttonForm:hover{
+    transition: 0.5s;
+    background-color: rgb(168, 162, 162);
+ }

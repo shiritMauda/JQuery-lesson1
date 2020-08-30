@@ -1,0 +1,28 @@
+<div class="wrapper">
+<div class="wrapperForm">
+
+    <h2>כניסה</h2>
+    <form [formGroup]="rForm" (submit)="login()">
+        <app-input *ngFor="let i of inputs" [config]="i" [formControlName]="i.formControlName"></app-input>
+
+ 
+
+        <div class="actionForm">
+            <div><button class="buttonForm" [disabled]="!rForm.valid">{{btn.ok | titlecase}}</button></div>
+            <div><button class="buttonForm" (click)="$event.preventDefault();cancel()">{{btn.cancel | titlecase}}</button></div>
+        </div>
+
+    </form>
+    <div>
+        <a  [routerLink]="['/register']">{{label.register}}</a>
+    </div>
+<!--     <div>
+        {{rForm.value|json}}
+    </div> -->
+    <div>
+        {{msgError}}
+    </div>
+
+</div>
+</div>
+

@@ -1,0 +1,27 @@
+<div class="wrapper">
+<div class="wrapperForm">
+
+    <h2>הוספת תצפית</h2>
+    <form [formGroup]="rForm" (submit)="add()">
+        <app-input *ngFor="let i of inputs" [config]="i" [formControlName]="i.formControlName" [selectList]="i.list"></app-input>
+        
+        <label>{{label.area}}</label>
+        <select [(ngModel)]="area">
+            <option *ngFor="let a of areas$|async" [value]="a.id">{{a.name}}</option>
+          </select>
+        
+        <div class="actionForm">
+            <button class="buttonForm" [disabled]="!rForm.valid">{{btn.ok | titlecase}}</button>
+            <button class="buttonForm" (click)="$event.preventDefault();cancel()">{{btn.cancel | titlecase}}</button>
+        </div>
+
+    </form>
+    
+    <div>
+        {{rForm.value|json}}
+    </div>
+    <div>
+        {{msgError}}
+    </div>
+</div>
+</div>

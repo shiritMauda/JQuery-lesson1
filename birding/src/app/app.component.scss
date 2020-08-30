@@ -1,0 +1,11 @@
+:host{
+    direction: rtl;
+}
+.wrapper{
+    display: grid;
+    grid-template-rows: 40vh,60vh;
+    direction: rtl;
+}
+app-body{
+    background-color: lightgrey;
+}

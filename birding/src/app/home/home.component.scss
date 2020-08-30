@@ -1,0 +1,20 @@
+$test: solid 1px red;
+:host{
+    display: grid;
+    grid-template-rows: 10vh 90vh;
+    direction: rtl;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    
+}
+.side{
+    //outline: $test;
+}
+.content{
+    //outline: $test;
+}
+
+
+  

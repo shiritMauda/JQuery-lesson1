@@ -1,0 +1,24 @@
+<div class="wrapper">
+<div class="wrapperForm">
+
+    <h2>הוספת איזור</h2>
+    <form [formGroup]="rForm" (submit)="add()">
+        <app-input *ngFor="let i of inputs" [config]="i" [formControlName]="i.formControlName"></app-input>
+
+ 
+
+        <div class="actionForm">
+            <button class="buttonForm" [disabled]="!rForm.valid">{{btn.ok | titlecase}}</button>
+            <button class="buttonForm" (click)="$event.preventDefault();cancel()">{{btn.cancel | titlecase}}</button>
+        </div>
+
+    </form>
+    
+
+    <div>
+        {{msgError}}
+    </div>
+</div>
+
+</div>
+

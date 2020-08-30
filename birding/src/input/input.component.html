@@ -1,0 +1,27 @@
+<ng-container [ngSwitch]="config.type">
+    <div class="control" *ngSwitchCase="'select'">
+        <label>{{config.label}}</label>
+        <select >
+            <option *ngFor="let a of config.list" [value]="a.value">{{a.label}}</option>
+          </select>
+
+    </div>
+
+    <div class="control" *ngSwitchCase="'buttonGroup'">
+        
+            <button *ngFor="let b of config.list" [class]="b.color" [class.current]="currentValue === b.value"
+             (click)="$event.preventDefault();btnClick(b.value)">{{b.label}}{{currentValue === b.value}}
+            </button>
+    </div>
+    
+
+    <div class="control" *ngSwitchDefault>
+        <!-- <div class="control-title">{{config.label}}</div> -->
+        <input class="inputText" [type]="config.type" [value]="config.value||''" [formControl]="control">
+        <label class="floating-label">{{config.label}}</label>
+        <div class="error" *ngIf(valid)>{{config.error}}</div>
+    </div>
+
+</ng-container>
+
+

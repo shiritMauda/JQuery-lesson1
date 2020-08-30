@@ -1,0 +1,20 @@
+.card{
+     width: 200px;
+     padding: 5px;
+}
+.card:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+    animation-delay: 0.5s;
+}
+
+ 
+.buttonAdd{
+    margin: auto;
+    place-content: center;
+    color: #e2c108;
+    border-radius: 10px;
+    background-color: black;
+    border-color: black;
+}
+
